@@ -36,7 +36,7 @@ def FolderProcess(org_dir, target_dir, pixel):
 
 		# リサイズ処理
 		for name in files:
-			for ext in [".jpg",".jepg",".Jpg",".Jepg",".JPG",".JEPG",".png",".PNG",".bmp",".BMP"]:
+			for ext in [".jpg",".jpeg",".Jpg",".Jpeg",".JPG",".JPEG",".png",".PNG",".bmp",".BMP"]:
 				if name.find(ext) > -1:
 					file_path = os.path.join(root, name)
 					save_path = file_path.replace(org_dir, target_dir)
